@@ -48,11 +48,15 @@ Target Variable: class
 4. Boxplots for outlier detection
 5. Correlation heatmap
 6. Redundant feature inspection
+
+
 # C. Handling Class Imbalance
-The dataset showed moderate class imbalance.
+The dataset showed moderate class imbalance:
+Gamma: 64.84%
+Hadron: 35.16%
 To reduce model bias toward the majority class, SMOTE (Synthetic Minority Oversampling Technique) was applied only to the training set.
 
-#D. Data Splitting
+# D. Data Splitting
 Stratified split was used:
 
 70% Training Set
@@ -69,8 +73,11 @@ The following machine learning models were trained and compared:
 5. Random Forest
 6. Gradient Boosting
 7. Voting Classifier
-$ F. Evaluation Metrics
 
+# F. Validation Results
+| Model | Accuracy | Precision | Recall | F1 Score | ROC AUC |
+| ------|----------|-----------|--------|----------|---------|
+|
 # Models were evaluated using:
 1. Accuracy
 2. Precision
