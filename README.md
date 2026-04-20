@@ -55,7 +55,9 @@ The dataset showed moderate class imbalance:
 Gamma: 64.84%
 Hadron: 35.16%
 To reduce model bias toward the majority class, SMOTE (Synthetic Minority Oversampling Technique) was applied only to the training set.
+
 ![Project Screenshot](plots/class_distribution.png)
+
 # D. Data Splitting
 Stratified split was used:
 
@@ -84,6 +86,7 @@ The following machine learning models were trained and compared:
 | Logistic Regression| 0.7936| 0.7002 |0.7218 |0.7108  |0.8397|
 | Linear SVM| 0.7964| 0.7102| 0.7109| 0.7105| 0.8399 |
 | Gaussian Naive Bayes|0.7178|0.6634|0.4008|0.4997|0.7563|
+![ Project Screenshot](plots/validation_model_comparison.png)
 
 # Models were evaluated using:
 1. Accuracy
