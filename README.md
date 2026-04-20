@@ -87,8 +87,8 @@ The following machine learning models were trained and compared:
 | Linear SVM| 0.7964| 0.7102| 0.7109| 0.7105| 0.8399 |
 | Gaussian Naive Bayes|0.7178|0.6634|0.4008|0.4997|0.7563|
 
-
 ![Project Screenshot](plots/validation_model_comparison.png)
+
 
 # Models were evaluated using:
 1. Accuracy
