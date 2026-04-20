@@ -30,65 +30,56 @@ Task Type: Supervised Machine Learning
 Problem Type: Binary Classification
 Target Variable: class
 
-| Orginal Label | Encoded | Meaning|
-| ------------- | ------------- |
-| g | 0  | Gamma Signal |
-| h | 1 | Hadron Noise |
+| Orginal Label | Encoded | Meaning            |
+| ------------- | ------------- | -------------
+| g             | 0             | Gamma Signal |
+| h             | 1             | Hadron Noise |
 
-Project Workflow
-1. Data Loading & Cleaning
-Loaded CSV dataset using Pandas
-Removed unnecessary columns
-Encoded target labels (g = 0, h = 1)
-Checked missing values and data types
-2. Exploratory Data Analysis (EDA)
-Dataset summary
-Class distribution analysis
-Feature histograms
-Boxplots for outlier detection
-Correlation heatmap
-Redundant feature inspection
-3. Handling Class Imbalance
-
+# Project Workflow
+# A. Data Loading & Cleaning
+1. Loaded CSV dataset using Pandas
+2. Removed unnecessary columns
+3. Encoded target labels (g = 0, h = 1)
+4. Checked missing values and data types
+# B. Exploratory Data Analysis (EDA)
+1. Dataset summary
+2. Class distribution analysis
+3. Feature histograms
+4. Boxplots for outlier detection
+5. Correlation heatmap
+6. Redundant feature inspection
+# C. Handling Class Imbalance
 The dataset showed moderate class imbalance.
-
 To reduce model bias toward the majority class, SMOTE (Synthetic Minority Oversampling Technique) was applied only to the training set.
 
-4. Data Splitting
-
+#D. Data Splitting
 Stratified split was used:
 
 70% Training Set
 15% Validation Set
 15% Test Set
-5. Feature Scaling
 
-Applied StandardScaler to normalize feature ranges.
-
-6. Models Built
-
+# E. Models Built
 The following machine learning models were trained and compared:
 
-Logistic Regression
-Gaussian Naive Bayes
-Linear SVM
-Decision Tree
-Random Forest
-Gradient Boosting
-Voting Classifier
-7. Evaluation Metrics
+1. Logistic Regression
+2. Gaussian Naive Bayes
+3. Linear SVM
+4. Decision Tree
+5. Random Forest
+6. Gradient Boosting
+7. Voting Classifier
+$ F. Evaluation Metrics
 
-Models were evaluated using:
+# Models were evaluated using:
+1. Accuracy
+2. Precision
+3. Recall
+4. F1 Score
+5. ROC-AUC Score
+6. Confusion Matrix
+7. ROC Curve
+8. Precision-Recall Curve
 
-Accuracy
-Precision
-Recall
-F1 Score
-ROC-AUC Score
-Confusion Matrix
-ROC Curve
-Precision-Recall Curve
-8. Final Testing
 
-The best model was selected based on validation performance and tested on unseen data.
 
