@@ -79,26 +79,49 @@ The following machine learning models were trained and compared:
 # F. Validation Results
 | Model | Accuracy | Precision | Recall | F1 Score | ROC AUC |
 | ------|----------|-----------|--------|----------|---------|
-| Random Forest| 86.82 | 80.83 | 0.8195 | 0.8139 |0.9316     |
-| Voting Classifier | 0.8654| 0.8025 | 0.8185 |0.8105 |0.9248|
-| Gradient Boosting| 0.8605 | 0.7951| 0.8126 | 0.8037 | 0.9178|
-| Decision Tree| 0.7978 | 0.6951 | 0.7567 | 0.7246| 0.7884    |
-| Logistic Regression| 0.7936| 0.7002 |0.7218 |0.7108  |0.8397|
-| Linear SVM| 0.7964| 0.7102| 0.7109| 0.7105| 0.8399 |
-| Gaussian Naive Bayes|0.7178|0.6634|0.4008|0.4997|0.7563|
+| Random Forest| 86.82 | 80.83 | 81.95 | 81.39 |93.16     |
+| Voting Classifier | 86.54| 80.25 | 81.85 |81.05 | 92.48|
+| Gradient Boosting| 86.05 | 79.51| 81.26 | 80.37 | 91.78|
+| Decision Tree| 79.78 | 69.51 | 75.67 | 72.46| 78.84    |
+| Logistic Regression| 79.36| 70.02 |72.18 |71.08  |83.97|
+| Linear SVM |79.64| 71.02| 71.09 | 71.05| 83.99 |
+| Gaussian Naive Bayes|71.78|66.34|40.08|49.97|75.63|
 
 ![Project Screenshot](plots/validation_model_comparison.png)
 
 
-# Models were evaluated using:
-1. Accuracy
-2. Precision
-3. Recall
-4. F1 Score
-5. ROC-AUC Score
-6. Confusion Matrix
-7. ROC Curve
-8. Precision-Recall Curve
+# G Best Model Selected:
+Random Forest achieved the best validation performance and was selected for final testing.
+## Final Test Results
 
+| Best Model     | Accuracy | Precision | Recall | F1 Score | ROC AUC |
+|----------------|----------|-----------|--------|----------|---------|
+| Random Forest  | 87.14   | 82.25    | 80.86 | 81.55   | 93.33  |
+
+# H. ROC Curve
+![Project Screenshot](plots/best_model_roc_curve.png)
+
+
+# I. Precision-Recall Curve
+![Project Screenshot](plots/best_model_precision_recall_curve.png)
+
+# J. Key Insights
+
+1. Random Forest emerged as the best-performing model across validation and test datasets, achieving the highest balance between accuracy, recall, precision, and F1-score.
+2. Ensemble methods consistently outperformed standalone models, showing that combining multiple decision trees improves robustness and generalization on unseen data.
+3. SMOTE helped reduce class imbalance bias by synthetically increasing minority-class samples in the training set, improving Hadron detection performance.
+4. Feature scaling significantly benefited distance-based and linear algorithms such as Logistic Regression and SVM by bringing all variables to a common range.
+5. Gaussian Naive Bayes performed the weakest, suggesting that the dataset does not strongly satisfy the independence assumptions required by Naive Bayes.
+6. High ROC AUC score (0.9333) indicates that the final Random Forest model has excellent ability to distinguish Gamma events from Hadron noise.
+7. Strong Gamma and Hadron classification scores in the final report confirm that the model performs reliably for both majority and minority classes.
+
+#K. Conclusion
+This project successfully built a robust machine learning system to classify Gamma and Hadron particle events using telescope signal data.
+
+After comparing multiple algorithms, Random Forest emerged as the best model with:
+
+87.14% Accuracy
+81.55% F1 Score
+0.9333 ROC AUC
 
 
