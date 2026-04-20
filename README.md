@@ -115,7 +115,7 @@ Random Forest achieved the best validation performance and was selected for fina
 6. High ROC AUC score (0.9333) indicates that the final Random Forest model has excellent ability to distinguish Gamma events from Hadron noise.
 7. Strong Gamma and Hadron classification scores in the final report confirm that the model performs reliably for both majority and minority classes.
 
-#K. Conclusion
+# K. Conclusion
 This project successfully built a robust machine learning system to classify Gamma and Hadron particle events using telescope signal data.
 
 After comparing multiple algorithms, Random Forest emerged as the best model with:
