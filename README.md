@@ -77,7 +77,14 @@ The following machine learning models were trained and compared:
 # F. Validation Results
 | Model | Accuracy | Precision | Recall | F1 Score | ROC AUC |
 | ------|----------|-----------|--------|----------|---------|
-|
+| Random Forest| 86.82 | 80.83 | 0.8195 | 0.8139 |0.9316     |
+| Voting Classifier | 0.8654| 0.8025 | 0.8185 |0.8105 |0.9248|
+| Gradient Boosting| 0.8605 | 0.7951| 0.8126 | 0.8037 | 0.9178|
+| Decision Tree| 0.7978 | 0.6951 | 0.7567 | 0.7246| 0.7884    |
+| Logistic Regression| 0.7936| 0.7002 |0.7218 |0.7108  |0.8397|
+| Linear SVM| 0.7964| 0.7102| 0.7109| 0.7105| 0.8399 |
+| Gaussian Naive Bayes|0.7178||0.6634|0.4008|0.4997|0.7563|
+
 # Models were evaluated using:
 1. Accuracy
 2. Precision
