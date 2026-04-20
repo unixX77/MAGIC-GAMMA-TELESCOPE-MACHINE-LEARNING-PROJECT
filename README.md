@@ -120,8 +120,9 @@ This project successfully built a robust machine learning system to classify Gam
 
 After comparing multiple algorithms, Random Forest emerged as the best model with:
 
-87.14% Accuracy
-81.55% F1 Score
-0.9333 ROC AUC
+|Accuracy |F1 Score| ROC AUC|
+|---------|--------|--------|
+| 87.14% | 81.55%  | 93.33% |
+
 
 
